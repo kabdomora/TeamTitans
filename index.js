@@ -108,11 +108,38 @@ function init() {
     .then(newManager => {
         renderEmployees.push(newManager);
         console.log("Manager added sucessfully!");
+        addtlEmployees();
     })
-    .then(
-        inquirer.prompt(addAnother)
-        // pickup here
-    );
+}
+
+function addtlEmployees() {
+    inquirer.prompt(addAnother)
+    .then(newEmployee => {
+        if(newEmployee.add_another === true) {
+            if(newEmployee.employee_type === "Engineer") {
+                inquirer.prompt(engineer)
+                .then(newEngineer => {
+                    renderEmployees.push(newEngineer);
+                    addtlEmployees();
+                })
+            } else {
+                inquirer.prompt(intern)
+                .then(newIntern => {
+                    renderEmployees.push(newIntern);
+                    addtlEmployees();
+                })
+            }
+        } else {
+            createFile()
+        }
+    });
+};
+
+function createFile(allNew) {
+    allNew = JSON.stringify(renderEmployees);
+    console.log(typeof allNew);
+    writeToFile("index.html", generateFile(allNew), (err) => err ?
+    console.log(err) : console.log("Profiles are rendered!"));
 }
 
 // Initialize app on load

@@ -79,6 +79,24 @@ const intern = [
     },
 ];
 
+const addAnother = [
+    {
+        type: "confirm",
+        name: "add_another",       
+        message: "Would you like to add another employee?",
+        default: "true"
+    },
+    {
+        type: "rawlist",
+        name: "employee_type",
+        choices: [
+            "Engineer",
+            "Intern"
+        ],
+        message: "Are they an enginner or an intern?",
+        when: (confirm) => confirm.add_another === true
+    }
+];
 
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
@@ -90,7 +108,11 @@ function init() {
     .then(newManager => {
         renderEmployees.push(newManager);
         console.log("Manager added sucessfully!");
-    });
+    })
+    .then(
+        inquirer.prompt(addAnother)
+        // pickup here
+    );
 }
 
 // Initialize app on load

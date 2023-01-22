@@ -86,6 +86,11 @@ function writeToFile(fileName, data) {
 
 function init() {
     // function to cycle through profile prompts
+    inquirer.prompt(manager)
+    .then(newManager => {
+        renderEmployees.push(newManager);
+        console.log("Manager added sucessfully!");
+    });
 }
 
 // Initialize app on load

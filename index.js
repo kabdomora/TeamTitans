@@ -8,6 +8,8 @@ const empName = "What is their name?";
 const empID = "Enter a distinct employee ID.";
 const email = "What is their email address?";
 
+const renderEmployees = [];
+
 const manager = [
     {
         type: "input",
@@ -78,4 +80,13 @@ const intern = [
 ];
 
 
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
+function init() {
+    // function to cycle through profile prompts
+}
+
+// Initialize app on load
+init();

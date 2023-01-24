@@ -1,9 +1,14 @@
 :root {
-
+  --rgb-purp: 232, 102, 236,;
+  --grey: rgb(201, 200, 200);
+  --pad-between: 0 40px;
+  --radius: 5px;
+  --rgb-purple: rgba(232, 102, 236, 1)
 }
 
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    background-color: rgb(55, 53, 53); 
 }
 

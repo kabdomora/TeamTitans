@@ -12,3 +12,18 @@
     background-color: rgb(55, 53, 53); 
 }
 
+.card-header {  
+  margin-top: -20px;
+}
+
+.card .card-header {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover .card-header {
+  box-shadow: inset 0px 0px 8px var(--rgb-purple) , 0 0 15px var(--rgb-purple);
+  color: black;
+}
+

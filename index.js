@@ -119,12 +119,14 @@ function addtlEmployees() {
             if(newEmployee.employee_type === "Engineer") {
                 inquirer.prompt(engineer)
                 .then(newEngineer => {
+                    Object.assign(newEngineer, {"title":"Engineer"})
                     renderEmployees.push(newEngineer);
                     addtlEmployees();
                 })
             } else {
                 inquirer.prompt(intern)
                 .then(newIntern => {
+                    Object.assign(newIntern, {"title":"Intern"})
                     renderEmployees.push(newIntern);
                     addtlEmployees();
                 })

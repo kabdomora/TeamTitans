@@ -8,13 +8,38 @@
       <link rel="stylesheet" href="./assets/css/style.css" />
       <script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
   </head>
+  [{"manager_name":"kayla","manager_id":"123","manager_email":"kayla@mail.com","manager_office":"1"},{"engineer_name":"tom","engineer_id":"2","engineer_email":"tom@mail.com","github":"tgt","title":"Engineer"},{"intern_name":"kim","intern_id":"333","intern_email":"kim@mail.com","school":"ucla","title":"Intern"}]
   <body>
-      <section>
-        // Team manager info here: kayla
-      </section>
-      <section>
-        // Employees here
-      </section>
+      <header>
+        <h1 class="text-2xl my-2.5 text-center text-cyan-400">Meet The Team</h1>
+      </header>
+      
+      <main>
+        <div class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">
+          <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80">
+            <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">kayla</header>
+            <h3>Manager</h3>
+            <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
+              <ul>
+                <li class="text-stone-400">ID# 123</li>
+                <li class="text-stone-400"><a href="mailto:kayla@mail.com">Email: kayla@mail.com</a></li>
+                <li class="text-stone-400">Office# 1</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        
+        <div id="engineers" class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">
+          
+            // Engineers here
+          
+        </div>
+        <div id="interns" class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">
+          
+            // Interns here
+          
+        </div>
+      </main>
   </body>
   </html>
   

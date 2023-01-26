@@ -5,11 +5,45 @@ function generateFile(data) {
   employees.forEach((value, index) => {
     if (index > 0) {
       let title = value.title;
+      let ename = value.engineer_name;
+      let iname = value.intern_name;
+      let eid = value.engineer_id;
+      let iid = value.intern_id;
+      let eemail = value.engineer_email;
+      let iemail = value.intern_email;
+      let github = value.github;
+      let school = value.school;
+
 
       if (title === "Engineer") {
-        console.log("engineer #" + index);
+        return `
+        <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80">
+          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">${ename}</header>
+          <h3>Engineer</h3>
+          <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
+            <ul>
+              <li class="text-stone-400">ID# ${eid}</li>
+              <li class="text-stone-400"><a href="mailto:${eemail}">Email: ${eemail}</a></li>
+              <li class="text-stone-400"><a href="https://github.com/${github}">${github}</a></li>
+            </ul>
+          </div>
+        </section>
+        `
+        
       } else if (title === "Intern") {
-        console.log("intern #" + index);
+        return `
+        <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80">
+          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">${iname}</header>
+          <h3>Engineer</h3>
+          <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
+            <ul>
+              <li class="text-stone-400">ID# ${iid}</li>
+              <li class="text-stone-400"><a href="mailto:${iemail}">Email: ${iemail}</a></li>
+              <li class="text-stone-400">Current School: ${school}</li>
+            </ul>
+          </div>
+        </section>
+        `
       }
     }
     

@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="./assets/css/style.css" />
       <script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
   </head>
-  [{"manager_name":"kayla","manager_id":"123","manager_email":"kayla@mail.com","manager_office":"1"},{"engineer_name":"tom","engineer_id":"2","engineer_email":"tom@mail.com","github":"tgt","title":"Engineer"},{"intern_name":"kim","intern_id":"333","intern_email":"kim@mail.com","school":"ucla","title":"Intern"}]
+  [{"manager_name":"Kayla Brown","manager_id":"111","manager_email":"@@@","manager_office":"111"},{"engineer_name":"Cathy","engineer_id":"2222","engineer_email":"2@2","github":"gitc","title":"Engineer"},{"engineer_name":"Peter","engineer_id":"333","engineer_email":"p@mail","github":"pgit","title":"Engineer"},{"intern_name":"Tseg T","intern_id":"876","intern_email":"tse@mail","school":"UCLA","title":"Intern"},{"intern_name":"Jenny C","intern_id":"4823","intern_email":"jen@mail","school":"Trilogy","title":"Intern"}]
   <body>
       <header>
         <h1 class="text-2xl my-2.5 text-center text-cyan-400">Meet The Team</h1>
@@ -17,28 +17,92 @@
       <main>
         <div class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">
           <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80">
-            <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">kayla</header>
+            <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Kayla Brown</header>
             <h3>Manager</h3>
             <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
               <ul>
-                <li class="text-stone-400">ID# 123</li>
-                <li class="text-stone-400"><a href="mailto:kayla@mail.com">Email: kayla@mail.com</a></li>
-                <li class="text-stone-400">Office# 1</li>
+                <li class="text-stone-400">ID# 111</li>
+                <li class="text-stone-400"><a href="mailto:@@@">Email: @@@</a></li>
+                <li class="text-stone-400">Office# 111</li>
               </ul>
             </div>
           </section>
         </div>
         
-        <div id="engineers" class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">
-          
-            // Engineers here
-          
+        
+    <div class="p-8 grid grid-cols-4">
+      <div class="col-span-1">
+        <h1 class="text-2xl my-2.5 text-left text-cyan-400">Engineers</h2>
+      </div>
+
+      <div class="col-span-3">
+        <div id="engineers" class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">              
+        
+        <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80 p-8">
+          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Cathy</header>
+          <h3>Engineer</h3>
+          <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
+            <ul>
+              <li class="text-stone-400">ID# 2222</li>
+              <li class="text-stone-400"><a href="mailto:2@2">Email: 2@2</a></li>
+              <li class="text-stone-400"><a href="https://github.com/gitc">gitc</a></li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80 p-8">
+          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Peter</header>
+          <h3>Engineer</h3>
+          <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
+            <ul>
+              <li class="text-stone-400">ID# 333</li>
+              <li class="text-stone-400"><a href="mailto:p@mail">Email: p@mail</a></li>
+              <li class="text-stone-400"><a href="https://github.com/pgit">pgit</a></li>
+            </ul>
+          </div>
+        </section>
+              
         </div>
-        <div id="interns" class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">
-          
-            // Interns here
-          
+      </div>
+    </div>
+
+    <div class="p-8 grid grid-cols-4">
+      <div class="col-span-1">
+        <h1 class="text-2xl my-2.5 text-left text-cyan-400">Interns</h2>
+      </div>
+
+      <div class="col-span-3">
+        <div id="interns" class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">              
+        
+        <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80 p-8">
+          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Tseg T</header>
+          <h3>Intern</h3>
+          <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
+            <ul>
+              <li class="text-stone-400">ID# 876</li>
+              <li class="text-stone-400"><a href="mailto:tse@mail">Email: tse@mail</a></li>
+              <li class="text-stone-400">Current School: UCLA</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80 p-8">
+          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Jenny C</header>
+          <h3>Intern</h3>
+          <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
+            <ul>
+              <li class="text-stone-400">ID# 4823</li>
+              <li class="text-stone-400"><a href="mailto:jen@mail">Email: jen@mail</a></li>
+              <li class="text-stone-400">Current School: Trilogy</li>
+            </ul>
+          </div>
+        </section>
+              
         </div>
+      </div>
+    </div>
+    
+
       </main>
   </body>
   </html>

@@ -21,7 +21,7 @@ describe("Employee", () => {
     });
 
     describe("getId()", () => {
-        it("should return the employee name", () => {
+        it("should return the employee id", () => {
             const id = "123";
 
             expect(object.getId()).toBe(id);
@@ -29,10 +29,60 @@ describe("Employee", () => {
     });
 
     describe("getEmail()", () => {
-        it("should return the employee name", () => {
+        it("should return the employee email", () => {
             const email = "address@mail.com";
 
             expect(object.getEmail()).toBe(email);
+        });
+    });
+});
+
+describe("Engineer", () => {
+    describe("newEngineer", () => {
+        it("should create a new engineer object", () => {
+            const object = new Engineer();
+
+            expect(typeof(object)).toBe('object');
+        });        
+    });
+
+    describe("getGithub()", () => {
+        it("should return the github id", () => {
+            const gitId = "GittyId";
+
+            expect(object.getGithub()).toBe(gitId);
+        });
+    });
+
+    describe("getRole()", () => {
+        it("should return the employee role as Engineer", () => {
+
+            expect(object.getRole()).toBe("Engineer");
+        });
+    });
+});
+
+describe("Intern", () => {
+    describe("newIntern", () => {
+        it("should create a new Intern object", () => {
+            const object = new Intern();
+
+            expect(typeof(object)).toBe('object');
+        });        
+    });
+
+    describe("getSchool()", () => {
+        it("should return the school name", () => {
+            const school = "UCLA";
+
+            expect(object.getGithub()).toBe(school);
+        });
+    });
+
+    describe("getRole()", () => {
+        it("should return the employee role as Intern", () => {
+
+            expect(object.getRole()).toBe("Intern");
         });
     });
 });

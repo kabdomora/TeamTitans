@@ -86,3 +86,20 @@ describe("Intern", () => {
         });
     });
 });
+
+describe("Manager", () => {
+    describe("newManager", () => {
+        it("should create a new Manager object", () => {
+            const object = new Manager();
+
+            expect(typeof(object)).toBe('object');
+        });        
+    });
+
+    describe("getRole()", () => {
+        it("should return the employee role as Manager", () => {
+
+            expect(object.getRole()).toBe("Manager");
+        });
+    });
+});

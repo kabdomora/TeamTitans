@@ -16,6 +16,7 @@
 
   ## How To Use
   * Use this application to quickly create a well-organized HTML webpage displaying team personnel organized by role. No more manually creating or formatting elements! 
+  [See Demo](https://drive.google.com/file/d/1OSY-h6Gm_JNygWJnDqIAjLJA3EDzwVHo/view?usp=sharing)
 
   ## How To Contribute
   * Contact me on GitHub to contribute! If you simply wish to modify for personal use, feel free to copy this repo.

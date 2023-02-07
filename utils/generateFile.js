@@ -48,7 +48,7 @@ function generateFile(data) {
     return `
     <div class="p-8 grid grid-cols-4">
       <div class="col-span-1">
-        <h1 class="text-2xl my-2.5 text-left text-cyan-400">Engineers</h2>
+        <h2 class="text-2xl my-2.5 text-left text-cyan-400">Engineers</h2>
       </div>
 
       <div class="col-span-3">
@@ -60,7 +60,7 @@ function generateFile(data) {
 
     <div class="p-8 grid grid-cols-4">
       <div class="col-span-1">
-        <h1 class="text-2xl my-2.5 text-left text-cyan-400">Interns</h2>
+        <h2 class="text-2xl my-2.5 text-left text-cyan-400">Interns</h2>
       </div>
 
       <div class="col-span-3">
@@ -91,18 +91,26 @@ function generateFile(data) {
       </header>
       
       <main>
-        <div class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">
-          <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80">
-            <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">${employees[0].manager_name}</header>
-            <h3>Manager</h3>
-            <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
-              <ul>
-                <li class="text-stone-400">ID# ${employees[0].manager_id}</li>
-                <li class="text-stone-400"><a href="mailto:${employees[0].manager_email}">Email: ${employees[0].manager_email}</a></li>
-                <li class="text-stone-400">Office# ${employees[0].manager_office}</li>
-              </ul>
+        <div class="p-8 grid grid-cols-4">
+          <div class="col-span-1">
+            <h2 class="text-2xl my-2.5 text-left text-cyan-400">Team Manager</h2>
+          </div>
+
+          <div class="col-span-3">
+            <div class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">
+              <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80">
+                <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">${employees[0].manager_name}</header>
+                <h3>Manager</h3>
+                <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
+                  <ul>
+                    <li class="text-stone-400">ID# ${employees[0].manager_id}</li>
+                    <li class="text-stone-400"><a href="mailto:${employees[0].manager_email}">Email: ${employees[0].manager_email}</a></li>
+                    <li class="text-stone-400">Office# ${employees[0].manager_office}</li>
+                  </ul>
+                </div>
+              </section>
             </div>
-          </section>
+          </div>
         </div>
         
         ${renderEmployees(employees)}

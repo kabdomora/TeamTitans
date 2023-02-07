@@ -8,56 +8,63 @@
       <link rel="stylesheet" href="./assets/css/style.css" />
       <script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
   </head>
-  [{"manager_name":"Kayla Brown","manager_id":"111","manager_email":"@@@","manager_office":"111"},{"engineer_name":"Cathy","engineer_id":"2222","engineer_email":"2@2","github":"gitc","title":"Engineer"},{"engineer_name":"Peter","engineer_id":"333","engineer_email":"p@mail","github":"pgit","title":"Engineer"},{"intern_name":"Tseg T","intern_id":"876","intern_email":"tse@mail","school":"UCLA","title":"Intern"},{"intern_name":"Jenny C","intern_id":"4823","intern_email":"jen@mail","school":"Trilogy","title":"Intern"}]
   <body>
       <header>
         <h1 class="text-2xl my-2.5 text-center text-cyan-400">Meet The Team</h1>
       </header>
       
       <main>
-        <div class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">
-          <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80">
-            <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Kayla Brown</header>
-            <h3>Manager</h3>
-            <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
-              <ul>
-                <li class="text-stone-400">ID# 111</li>
-                <li class="text-stone-400"><a href="mailto:@@@">Email: @@@</a></li>
-                <li class="text-stone-400">Office# 111</li>
-              </ul>
+        <div class="p-8 grid grid-cols-4">
+          <div class="col-span-1">
+            <h2 class="text-2xl my-2.5 text-left text-cyan-400">Team Manager</h2>
+          </div>
+
+          <div class="col-span-3">
+            <div class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">
+              <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80">
+                <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Kayla</header>
+                <h3>Manager</h3>
+                <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
+                  <ul>
+                    <li class="text-stone-400">ID# 111</li>
+                    <li class="text-stone-400"><a href="mailto:@@@">Email: @@@</a></li>
+                    <li class="text-stone-400">Office# 111</li>
+                  </ul>
+                </div>
+              </section>
             </div>
-          </section>
+          </div>
         </div>
         
         
     <div class="p-8 grid grid-cols-4">
       <div class="col-span-1">
-        <h1 class="text-2xl my-2.5 text-left text-cyan-400">Engineers</h2>
+        <h2 class="text-2xl my-2.5 text-left text-cyan-400">Engineers</h2>
       </div>
 
       <div class="col-span-3">
         <div id="engineers" class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">              
         
         <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80 p-8">
-          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Cathy</header>
+          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">cathy</header>
           <h3>Engineer</h3>
           <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
             <ul>
-              <li class="text-stone-400">ID# 2222</li>
-              <li class="text-stone-400"><a href="mailto:2@2">Email: 2@2</a></li>
+              <li class="text-stone-400">ID# 222</li>
+              <li class="text-stone-400"><a href="mailto:2@22">Email: 2@22</a></li>
               <li class="text-stone-400"><a href="https://github.com/gitc">gitc</a></li>
             </ul>
           </div>
         </section>
         
         <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80 p-8">
-          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Peter</header>
+          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">peter</header>
           <h3>Engineer</h3>
           <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
             <ul>
-              <li class="text-stone-400">ID# 333</li>
-              <li class="text-stone-400"><a href="mailto:p@mail">Email: p@mail</a></li>
-              <li class="text-stone-400"><a href="https://github.com/pgit">pgit</a></li>
+              <li class="text-stone-400">ID# 234</li>
+              <li class="text-stone-400"><a href="mailto:pet@">Email: pet@</a></li>
+              <li class="text-stone-400"><a href="https://github.com/gitpet">gitpet</a></li>
             </ul>
           </div>
         </section>
@@ -68,32 +75,32 @@
 
     <div class="p-8 grid grid-cols-4">
       <div class="col-span-1">
-        <h1 class="text-2xl my-2.5 text-left text-cyan-400">Interns</h2>
+        <h2 class="text-2xl my-2.5 text-left text-cyan-400">Interns</h2>
       </div>
 
       <div class="col-span-3">
         <div id="interns" class="flex flex-row flex-wrap space-x-2.5 space-y-2.5">              
         
         <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80 p-8">
-          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Tseg T</header>
+          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">intern</header>
           <h3>Intern</h3>
           <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
             <ul>
-              <li class="text-stone-400">ID# 876</li>
-              <li class="text-stone-400"><a href="mailto:tse@mail">Email: tse@mail</a></li>
-              <li class="text-stone-400">Current School: UCLA</li>
+              <li class="text-stone-400">ID# 2384</li>
+              <li class="text-stone-400"><a href="mailto:intern@">Email: intern@</a></li>
+              <li class="text-stone-400">Current School: ucla</li>
             </ul>
           </div>
         </section>
         
         <section class="card flex flex-col border-dashed border-2 border-stone-400 p-2.5 mx-5 w-28 basis-80 p-8">
-          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Jenny C</header>
+          <header class="card-header relative border-solid border-stone-400 border rounded-md p-1 font-extrabold text-teal-500">Person</header>
           <h3>Intern</h3>
           <div class="pre bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md text-stone-400">
             <ul>
-              <li class="text-stone-400">ID# 4823</li>
-              <li class="text-stone-400"><a href="mailto:jen@mail">Email: jen@mail</a></li>
-              <li class="text-stone-400">Current School: Trilogy</li>
+              <li class="text-stone-400">ID# 345324</li>
+              <li class="text-stone-400"><a href="mailto:person@mail">Email: person@mail</a></li>
+              <li class="text-stone-400">Current School: trilogy</li>
             </ul>
           </div>
         </section>
